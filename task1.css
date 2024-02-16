@@ -1,0 +1,377 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Nunito', sans-serif;
+}  
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 5;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-left: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 20px;
+    background-color: #ffffff;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    margin-right: 20px;
+}
+.navbar ul li a{
+    
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #8b6e59;
+    transition: color 0.3s ease;
+}
+.navbar a:hover{
+    color: rgb(255, 255, 255);
+}
+/*sidebar */
+.sidebar-content{
+    display: none;
+    position:fixed;
+    top: 0;
+    right:0;
+    height: 100%;
+    width: 250px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(250, 250, 250, 0.2);
+    backdrop-filter:blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+.sidebar-content li{
+    margin-bottom: 25px;
+    width: 100%;
+}
+.sidebar-content a{
+    width: 100%;
+}
+.sidebar i {
+    display: none;
+    font-size: 2.5rem;
+    color: #ddd;
+}
+.sidebar-content ul{
+    width: 250px;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    display:block;
+}
+.sidebar-content ul a{
+    color: #000;
+}
+.sidebar-content ul i{
+    width: 250px;
+    align-items: center;
+    color: #ffffff;
+    position: relative;
+    left: 60%;
+}
+/*sidebar */
+.container {
+    position: relative;
+    overflow: hidden;
+}
+.container img {
+    width: 100%;
+    height: 790px;
+    display: block;
+}
+
+.container .login{
+    position: absolute;
+    top: 50%;
+    left:35%;
+    
+}
+.container .login .btn {
+    background-color: #6e1d1d;
+    height: 50px;
+    width: 200px;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out;
+    margin-right: 50px;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container .login .btn:hover {
+    background-color:#d59b64;
+}
+
+/* about section */
+
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    background-color: #ffffff;
+}
+
+.side img {
+    margin-left: 60px;
+    width: 100%;
+    height: 600px;
+}
+
+.about {
+    font-size: 1.2rem;
+    margin-top: 150px;
+    margin-right: 60px;
+    max-width: 600px;
+    text-align:center;
+    color:black;
+}
+.about h1{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(255, 0, 0);
+}
+
+/* about section end*/
+/* menu section start*/
+
+#menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 90px;
+    justify-content: space-between;
+    padding: 100px;
+    background-color: #d59b64;
+}
+
+.card {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: #ccc;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img {
+    position: relative;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* menu section end*/
+
+/* Contact section start */
+
+#contact {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.contain {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contact .heading {
+    font-family:'Dancing Script', cursive;
+    color: #622121;
+    margin-bottom: 30px;
+    font-size: 50px;
+    
+}
+
+#contact form label {
+        display: inline-block;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 5px;
+        color: #555;
+        font-size: 16px;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+#contact form input:focus,
+#contact form textarea:focus {
+    border-color: #00ff08;
+}
+#contact form button {
+    background-color: #00ff08;
+    color: #000000;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+#contact form button:hover {
+    background-color: #81ff87;
+}
+#contact p {
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Contact section end */
+
+/* footer section start */
+
+footer {
+    width: 100%;
+    background-color: #622121;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer p{
+    font-family:'Dancing Script', cursive ;
+    font-weight: bold;
+}
+.footer-links a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* footer section end*/
+
+
+/* media query to make responsive */
+@media screen and (max-width: 767px) {
+    .sidebar ul li a{
+        display: none;
+    }
+    .sidebar ul li i{
+        display: block;
+    }
+    .sidebar-content ul li a{
+        display: block;
+    }
+    .sidebar-content i{
+        display: block;
+    }
+    .container img {
+        height: 767px;
+    }
+    .container .login{
+        position: absolute;
+        top: 45%;
+        left:30%;
+    }
+    .container .login .btn {
+        margin-bottom: 40px;
+    }
+    section {
+        display: block;
+        padding-left: 0px;
+    }
+    .side img {
+        height: 350px;
+    }
+    .about {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        padding-left: 60px;
+        width: 100%;
+        color:black;
+        display:block;
+        text-align: justify;
+    }
+    .about h1{
+        padding-left: 50px;
+    }
+    #menu {
+        display: block;
+        padding: 50px; 
+    }
+    .card {
+        margin-bottom: 30px;
+    }
+    #footer {
+        padding-left: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .container .login{
+        top: 35%;
+        left:25%;
+    }
+    .side img {
+        width: 400px;
+        margin-left: 20px;
+    }
+    .about {
+        font-size: 1.2rem;
+        margin-top: 40px;
+        padding-left: 40px;
+        width: 100%;
+        color:black;
+        display:block;
+        text-align: justify;
+    }
+}
